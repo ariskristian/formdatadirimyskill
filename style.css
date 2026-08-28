@@ -1,54 +1,130 @@
+/* Mengatur seluruh halaman/body */
 body {
+
+    /* Menentukan jenis huruf yang digunakan */
+    /* Jika Arial tidak tersedia, gunakan sans-serif */
     font-family: Arial, sans-serif;
+
+    /* Memberikan warna abu-abu muda sebagai background halaman */
     background-color: #f5f5f5;
 }
 
+
+/* Mengatur elemen yang memiliki class="container" */
 .container {
+
+    /* Menentukan lebar container sebesar 500px */
     width: 500px;
+
+    /* Memberikan jarak 50px dari bagian atas */
+    /* auto pada kiri dan kanan membuat container berada di tengah */
     margin: 50px auto;
+
+    /* Memberikan warna putih pada container */
     background-color: white;
+
+    /* Memberikan ruang antara isi container dan tepinya sebesar 30px */
     padding: 30px;
+
+    /* Membuat sudut container menjadi sedikit melengkung */
     border-radius: 10px;
 }
 
+
+/* Mengatur semua elemen <h1> */
 h1 {
+
+    /* Membuat teks berada di tengah secara horizontal */
     text-align: center;
 }
 
+
+/* Mengatur semua elemen <label> */
 label {
+
+    /* Membuat label menjadi satu blok penuh */
+    /* Sehingga input berikutnya berada di baris baru */
     display: block;
+
+    /* Memberikan jarak 15px dari elemen sebelumnya */
     margin-top: 15px;
 }
 
+
+/* Mengatur semua elemen <input> */
 input {
+
+    /* Membuat input memenuhi 100% lebar container */
     width: 100%;
+
+    /* Memberikan ruang di dalam input sebesar 10px */
+    /* Membuat tulisan di dalam input tidak terlalu menempel dengan tepi */
     padding: 10px;
+
+    /* Memberikan jarak 5px dari label di atasnya */
     margin-top: 5px;
+
+    /* Membuat width tetap dihitung termasuk padding */
+    /* Tanpa ini, input 100% + padding bisa melebihi container */
     box-sizing: border-box;
 }
 
+
+/* Mengatur semua elemen <button> */
 button {
+
+    /* Membuat button menjadi elemen block */
     display: block;
+
+    /* Memberikan jarak 20px dari elemen sebelumnya */
     margin-top: 20px;
+
+    /* Memberikan margin otomatis di sebelah kiri */
+    /* Digabung dengan display:block, ini membuat button berada di kanan */
     margin-left: auto;
 
+    /* Memberikan warna hijau pada button */
     background-color: green;
+
+    /* Membuat warna tulisan menjadi putih */
     color: white;
 
+    /* Menghilangkan garis/border bawaan button */
     border: none;
+
+    /* Memberikan ruang di dalam button */
+    /* 10px = atas/bawah, 25px = kiri/kanan */
     padding: 10px 25px;
+
+    /* Mengubah cursor menjadi bentuk tangan ketika diarahkan ke button */
     cursor: pointer;
 }
 
+
+/* Mengatur semua elemen <table> */
 table {
+
+    /* Membuat tabel memenuhi seluruh lebar container */
     width: 100%;
+
+    /* Memberikan jarak 30px antara form dan tabel */
     margin-top: 30px;
+
+    /* Menggabungkan border antar cell agar tidak terlihat dobel */
     border-collapse: collapse;
 }
 
+
+/* Mengatur elemen <th> dan <td> sekaligus */
 th,
 td {
+
+    /* Memberikan garis border 1px berwarna abu-abu */
     border: 1px solid #ccc;
+
+    /* Memberikan ruang di dalam setiap cell sebesar 10px */
     padding: 10px;
+
+    /* Membuat teks berada di sisi kiri cell */
     text-align: left;
 }
