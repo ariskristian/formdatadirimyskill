@@ -1,38 +1,112 @@
 <!DOCTYPE html>
+<!-- Memberitahu browser bahwa dokumen ini menggunakan HTML5 -->
+
 <html lang="id">
+<!-- Membuka dokumen HTML -->
+<!-- lang="id" memberitahu browser bahwa bahasa utama halaman adalah Bahasa Indonesia -->
+
 <head>
+    <!-- <head> berisi informasi tentang halaman yang tidak langsung ditampilkan sebagai isi halaman -->
+
     <meta charset="UTF-8">
+    <!-- Menentukan encoding karakter UTF-8 agar berbagai karakter dapat ditampilkan dengan benar -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Membuat tampilan halaman menyesuaikan lebar perangkat -->
+    <!-- Penting agar website lebih baik ditampilkan di HP/tablet -->
+
     <title>Form Data Diri</title>
+    <!-- Menentukan judul halaman yang muncul pada tab browser -->
 
     <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file HTML dengan file CSS bernama style.css -->
+    <!-- href menunjukkan lokasi/nama file CSS yang digunakan -->
+
 </head>
+<!-- Menutup bagian <head> -->
+
+
 <body>
+    <!-- <body> berisi seluruh konten yang akan terlihat pada halaman website -->
+
 
     <div class="container">
+        <!-- Membuat sebuah wadah/container -->
+        <!-- class="container" digunakan agar CSS dapat mengatur tampilan container ini -->
+
 
         <h1>Form Data Diri</h1>
+        <!-- <h1> adalah heading/judul utama -->
+        <!-- Teks "Form Data Diri" akan ditampilkan sebagai judul -->
+
 
         <form id="dataForm">
+            <!-- Membuat form untuk menerima input dari user -->
+            <!-- id="dataForm" memberikan identitas unik kepada form -->
+            <!-- JavaScript akan menggunakan id ini untuk menemukan form -->
+
 
             <label for="name">Name:</label>
+            <!-- <label> memberikan keterangan untuk input -->
+            <!-- for="name" menghubungkan label ini dengan input yang memiliki id="name" -->
+
+
             <input type="text" id="name">
+            <!-- Membuat kotak input untuk memasukkan nama -->
+            <!-- type="text" berarti input berupa teks -->
+            <!-- id="name" memberikan identitas kepada input -->
+
 
             <label for="email">Email:</label>
+            <!-- Label/keterangan untuk input email -->
+            <!-- for="email" menghubungkan label dengan input id="email" -->
+
+
             <input type="email" id="email">
+            <!-- Membuat kotak input untuk email -->
+            <!-- type="email" memberitahu browser bahwa input ini diharapkan berupa email -->
+            <!-- id="email" memberikan identitas kepada input -->
+
 
             <label for="alamat">Alamat:</label>
+            <!-- Label/keterangan untuk input alamat -->
+            <!-- for="alamat" menghubungkan label dengan input id="alamat" -->
+
+
             <input type="text" id="alamat">
+            <!-- Membuat kotak input untuk memasukkan alamat -->
+            <!-- type="text" berarti input berupa teks -->
+            <!-- id="alamat" memberikan identitas kepada input -->
+
 
             <button type="submit">Submit</button>
+            <!-- Membuat tombol Submit -->
+            <!-- type="submit" membuat tombol ini mengirim/meng-submit form -->
+            <!-- JavaScript akan menangkap event submit tersebut -->
+
 
         </form>
+        <!-- Menutup form -->
+
 
         <div id="hasil"></div>
+        <!-- Membuat tempat kosong untuk menampilkan hasil input -->
+        <!-- id="hasil" digunakan JavaScript untuk menemukan elemen ini -->
+        <!-- Nantinya JavaScript akan memasukkan tabel ke dalam div ini -->
+
 
     </div>
+    <!-- Menutup container -->
+
 
     <script src="script.js"></script>
+    <!-- Menghubungkan HTML dengan file JavaScript bernama script.js -->
+    <!-- src menunjukkan lokasi/nama file JavaScript -->
+
 
 </body>
+<!-- Menutup bagian body -->
+
+
 </html>
+<!-- Menutup seluruh dokumen HTML -->
